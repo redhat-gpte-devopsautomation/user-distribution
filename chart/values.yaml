@@ -1,0 +1,22 @@
+# Default values for usertool.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+usertoolNamespace: usertool
+
+image: quay.io/openshiftlabs/username-distribution:latest
+
+labAdminPassword: password
+labDuration: 1week
+labAccessToken: password
+labUserCount: 2
+labUserPassword: password
+labUserPrefix: user
+
+labExtraUrls: ""
+labModuleUrls: ""
+
+redis:
+  image: registry.redhat.io/rhel8/redis-6:latest
+  memory: 1Gi
+  pvc: 1Gi
